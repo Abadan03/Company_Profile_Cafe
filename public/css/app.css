@@ -1,0 +1,16 @@
+
+
+body {
+
+    background-image: url("/my-app/resources/images/Bg.png");
+    /* height: 100vh; */
+}
+
+
+.nav-link {
+    color: white !important;
+}
+
+.container{
+    height: 100%;
+}
