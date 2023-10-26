@@ -8,68 +8,46 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-
-
-
-body {
-    // background-image: url("{{ asset('images/Bg.png') }}");
-    // url("../images/bg_hero.svg")
-    background-image: url("../images/Bg.png");
-    background-repeat: no-repeat;
-    height: 100vh;
+.navbar-scroll {
+    backdrop-filter: blur(10px); /* Ubah nilai blur sesuai dengan kebutuhan Anda */
+    background-color: rgba(58, 58, 58, 0.5); /* Atur warna latar belakang dengan transparansi */
+    transition: background-color 0.3s ease; /* Menambahkan efek transisi untuk perubahan warna latar belakang */
 }
 
+.navbar-nav a{
+    margin-left: 14px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 .nav-link {
     color: white !important;
 }
 
-.container{
-    height: 100%;
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+#hero{
+    background-image: url("../images/Bg.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    top: 0% !important;
+    z-index: 1;
+}
 
-// Gallery section
-.photo-gallery {
-    color:#313437;
-    background-color:#fff;
-  }
-  
-  .photo-gallery p {
-    color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
-    .photo-gallery h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
+#about{
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe{
+        width: 100% !important;
     }
-  }
-  
-  .photo-gallery .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-    margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-    padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-    padding-bottom:30px;
-  }
-  
-  
+}
