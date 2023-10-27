@@ -8,68 +8,69 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-
-
-
-body {
-    // background-image: url("{{ asset('images/Bg.png') }}");
-    // url("../images/bg_hero.svg")
-    background-image: url("../images/Bg.png");
-    background-repeat: no-repeat;
-    height: 100vh;
+.navbar-scroll {
+    backdrop-filter: blur(10px);
+    background-color: rgba(58, 58, 58, 0.5);
+    transition: background-color 0.3s ease;
 }
 
+.navbar-nav a{
+    margin-left: 14px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 .nav-link {
     color: white !important;
 }
 
-.container{
-    height: 100%;
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+#hero{
+    background-image: url("../images/Bg.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    top: 0% !important;
+    z-index: 1;
+}
 
-// Gallery section
-.photo-gallery {
-    color:#313437;
-    background-color:#fff;
-  }
-  
-  .photo-gallery p {
-    color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
-    .photo-gallery h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
+#about{
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar {
+        backdrop-filter: blur(10px);
+        background-color: rgba(58, 58, 58, 0.5);
+        transition: background-color 0.3s ease;
     }
-  }
-  
-  .photo-gallery .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-    margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-    padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-    padding-bottom:30px;
-  }
-  
-  
+
+    #hero img{
+        width: 20%;
+
+    }
+    #hero h1{
+        font-size: 48px !important;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    iframe{
+        width: 100% !important;
+    }
+    #hero h1{
+        font-size: 32px !important;
+    }
+    #hero p{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+}
