@@ -3,9 +3,9 @@
 
  <!-- Hero -->
   <div id="hero" class="container-fluid d-flex flex-column text-white text-center align-items-center justify-content-center" >
-    <img width="10%" src="{{ url('assets/img/logo.png') }}" alt="">
-    <p class=" fw-bold" style="font-size: 60px;">Dapur Prasmanan</p>
-    <p class="w-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita, at corrupti repellat libero reprehenderit provident illum dicta voluptas mollitia natus deserunt eligendi ea alias, quis molestias blanditiis vero minima!</p>
+    <img class="img-fluid" width="10%" src="{{ url('assets/img/logo.png') }}" alt="">
+    <h1 class="fw-bold" style="font-size: 60px">Dapur Prasmanan</h1>
+    <p class="w-50 fw-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita, at corrupti repellat libero reprehenderit provident illum dicta voluptas mollitia natus deserunt eligendi ea alias, quis molestias blanditiis vero minima!</p>
     <button class="btn btn-light my-3 px-5">Button</button>
   </div>
 <!-- Hero End -->
@@ -37,7 +37,7 @@
             <h1>Galeri</h1>
             <hr class="d-flex justify-content-center text-center" style="border: 3px solid white; opacity: 1; width: 10%; margin: 0 auto;">
         </div>
-        <div class="row col-12">
+        <div class="row col-12 m-auto" style="width: 90%">
             <div class="text-center py-3 col-md-6 col-lg-4"><img class="img-fluid" src="{{ url('assets/img/grid1.png') }}"></div>
             <div class="text-center py-3 col-md-6 col-lg-4"><img class="img-fluid" src="{{ url('assets/img/grid2.png') }}"></div>
             <div class="text-center py-3 col-md-6 col-lg-4"><img class="img-fluid" src="{{ url('assets/img/grid3.png') }}"></div>
@@ -53,30 +53,26 @@
   {{-- Gallery End --}}
 
   {{-- Berita --}}
-  <div class="py-5">
-    <div class="container">
+  <div class="py-5 my-5">
+    <div class="container text-center">
         <div class="text-center mb-5">
             <h1>Berita & Promo</h1>
             <hr class="d-flex justify-content-center text-center" style="border: 3px solid black; opacity: 1; width: 10%; margin: 0 auto;">
         </div>
-        <div class="d-flex justify-content-around">
-            <div class="card" style="width: 18rem;">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-around m-auto">
+            <div class="card border-0" style="width: 18rem;">
                 <img src="{{ url('assets/img/grid1.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href=""><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
-                </div>
+                <a class="mt-2 text-decoration-none text-black fs-3 fw-medium" href="">BERITA 1</a>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-0" style="width: 18rem;">
                 <img src="{{ url('assets/img/grid1.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href=""><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
-                </div>
+                <a class="mt-2 text-decoration-none text-black fs-3 fw-medium" href="">BERITA 1</a>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-0" style="width: 18rem;">
+              <a href="">
                 <img src="{{ url('assets/img/grid1.png') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href=""><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
-                </div>
+                <a class="mt-2 text-decoration-none text-black fs-3 fw-medium" href="">BERITA 1</a>
+              </a>
             </div>
         </div>
     </div>
@@ -85,7 +81,7 @@
 
   <script>
     window.addEventListener("scroll", function() {
-        var navbar = document.querySelector(".navbar");
+        let navbar = document.querySelector(".navbar");
         if (window.scrollY > 0) {
             navbar.classList.add("navbar-scroll");
         } else {

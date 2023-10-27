@@ -9,9 +9,9 @@
 
 
 .navbar-scroll {
-    backdrop-filter: blur(10px); /* Ubah nilai blur sesuai dengan kebutuhan Anda */
-    background-color: rgba(58, 58, 58, 0.5); /* Atur warna latar belakang dengan transparansi */
-    transition: background-color 0.3s ease; /* Menambahkan efek transisi untuk perubahan warna latar belakang */
+    backdrop-filter: blur(10px);
+    background-color: rgba(58, 58, 58, 0.5);
+    transition: background-color 0.3s ease;
 }
 
 .navbar-nav a{
@@ -46,8 +46,31 @@ body{
     padding-bottom: 100px;
 }
 
+@media only screen and (max-width: 980px) {
+    .navbar {
+        backdrop-filter: blur(10px);
+        background-color: rgba(58, 58, 58, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    #hero img{
+        width: 20%;
+
+    }
+    #hero h1{
+        font-size: 48px !important;
+    }
+
+}
 @media only screen and (max-width: 600px) {
     iframe{
+        width: 100% !important;
+    }
+    #hero h1{
+        font-size: 32px !important;
+    }
+    #hero p{
+        font-size: 12px !important;
         width: 100% !important;
     }
 }
