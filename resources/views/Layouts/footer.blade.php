@@ -1,6 +1,6 @@
 <footer class="p-5 bg-dark text-white">
     <div class="container d-lg-flex justify-content-between align-items-center">
-        <div class="d-grid align-items-center text-center text-md-start mb-3 mb-md-0">
+        <div class="d-grid align-items-center text-center footer-information text-md-start mb-3 mb-md-0">
             <!-- Reservasi Section -->
             <div>
                 <h5>Hubungi kami untuk Reservasi :</h5>
@@ -12,7 +12,7 @@
                 <h6>10.00 - 21.00</h6>
             </div>
         </div>
-        <div class="text-start">
+        <div class="text-md-start footer-maps">
             <h5>Lokasi :</h5>
             <h6>Jl. Dagopojok AF No.89, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 41035</h6>
             <!-- Google Maps -->

@@ -87,3 +87,64 @@ body{
         width: 100% !important;
     }
 }
+
+/* PROMO */
+
+.promo {
+    background-color: #90a774;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+// laptop
+
+// Tablet
+@media (min-width:764px) {
+    
+    .promo-caraousel {
+        display: grid ;
+        width: 464px ;
+    }
+
+   
+}
+
+
+// mobile
+@media only screen and (max-width: 484px) {
+    .promo-caraousel {
+        width: 320px !important;
+    }
+
+    .description_carousel {
+        text-align: center;
+    }
+
+    .carousel_img {
+        // max-width: 220px !important;
+        // width: 120px;
+    }
+}
+
+
+
+
+/* FOOTER */
+// Tablet
+@media (min-width:764px) {
+    .footer-maps {
+        text-align: center ;
+    }
+    
+    .footer-information {
+        text-align: center ;
+    }
+}
+
+
+// Mobile
+@media only screen and (max-width: 484px) {
+    .footer-maps {
+        text-align: center;
+    }
+}
