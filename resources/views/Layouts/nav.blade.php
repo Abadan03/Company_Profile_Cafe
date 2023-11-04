@@ -1,4 +1,8 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+@php
+    $currentRouteName = Route::currentRouteName();
+@endphp
+
+<nav class="navbar navbar-expand-lg fixed-top @if($currentRouteName != 'home') bg-white text-black @endif">
     <div class="container-fluid mx-lg-5">
         <button>Logo</button>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,12 +14,24 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Alamat & Kontak</a>
-                <a class="nav-link" href="#">Promo</a>
-                <a class="nav-link" href="#">Reservasi</a>
+                <a class="nav-link @if($currentRouteName == 'home') text-white @elseif ($currentRouteName != 'home') text-black @endif" href="{{ route('home')}}">Home</a>
+                <a class="nav-link @if($currentRouteName == 'alamat') text-black active @elseif ($currentRouteName != 'home') text-black @endif" href="{{ route('alamat') }}" href="#">Alamat & Kontak</a>
+                <a class="nav-link @if($currentRouteName == 'promo') text-black active @elseif ($currentRouteName != 'home') text-black @endif" href="{{ route('promo') }}" href="#">Promo</a>
+                <a class="nav-link @if($currentRouteName == '') text-white @elseif ($currentRouteName != 'home') text-black @endif" href="{{ route('home') }}" href="#">Reservasi</a>
                 <button class="ms-4 mb-3 mb-lg-0">Button</button>
             </div>
         </div>
     </div>
 </nav>
+
+
+<script>
+    window.addEventListener("scroll", function() {
+        let navbar = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+            navbar.classList.add("navbar-scroll");
+        } else {
+            navbar.classList.remove("navbar-scroll");
+        }
+    });
+</script>

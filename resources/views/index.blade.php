@@ -31,7 +31,7 @@
   {{-- About us End --}}
 
   {{-- Gallery --}}
-  <div class="photo-gallery py-5" style="background-color: orange">
+  <div class="photo-gallery py-5" style="background-color: #728c56">
       <div class="container">
         <div class="text-center mb-5 text-white">
             <h1>Galeri</h1>
@@ -79,15 +79,4 @@
   </div>
   {{-- Berita End --}}
 
-  <script>
-    window.addEventListener("scroll", function() {
-        let navbar = document.querySelector(".navbar");
-        if (window.scrollY > 0) {
-            navbar.classList.add("navbar-scroll");
-        } else {
-            navbar.classList.remove("navbar-scroll");
-        }
-    });
-
-  </script>
 @endsection
