@@ -21,7 +21,11 @@
 }
 
 .nav-link {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.604);
+}
+.active , .nav-link:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
 }
 
 body{
@@ -45,6 +49,15 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+// #address {
+//     background-image: url("../images/bg2.png");
+//     background-repeat: no-repeat;
+//     height: 100vh;
+//     background-size: cover;
+//     top: 0% !important;
+//     z-index: 1;
+// }
 
 @media only screen and (max-width: 980px) {
     .navbar {
